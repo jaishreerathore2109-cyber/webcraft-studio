@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="WebCraft Studio - Beautiful, modern and mobile-friendly websites.">
+<title>WebCraft Studio | Premium Websites</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,Arial,sans-serif;background:#070707;color:#fff;line-height:1.6}
+a{text-decoration:none;color:inherit}
+header{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(7,7,7,.82);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,200,70,.15)}
+.nav{max-width:1180px;margin:auto;padding:14px 22px;display:flex;align-items:center;justify-content:space-between}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:21px}
+.brand img{width:45px;height:45px;object-fit:contain;border-radius:50%}
+.brand span{color:#f6c94c}
+nav{display:flex;gap:26px;color:#ddd;font-size:14px}
+nav a:hover{color:#f6c94c}
+.hero{min-height:100vh;display:grid;place-items:center;padding:130px 22px 70px;position:relative;overflow:hidden;background:radial-gradient(circle at 75% 35%,rgba(246,201,76,.13),transparent 32%),radial-gradient(circle at 20% 80%,rgba(255,255,255,.06),transparent 30%)}
+.hero-inner{max-width:1180px;width:100%;display:grid;grid-template-columns:1.05fr .95fr;gap:45px;align-items:center}
+.badge{display:inline-block;border:1px solid rgba(246,201,76,.35);color:#f6c94c;padding:8px 14px;border-radius:99px;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:18px}
+h1{font-size:clamp(44px,6vw,78px);line-height:1.02;letter-spacing:-3px}
+h1 span{color:#f6c94c}
+.hero p{color:#bcbcbc;max-width:600px;font-size:18px;margin:22px 0 30px}
+.buttons{display:flex;gap:13px;flex-wrap:wrap}
+.btn{padding:13px 22px;border-radius:10px;font-weight:700;display:inline-block;border:1px solid #f6c94c;transition:.25s}
+.primary{background:#f6c94c;color:#111}
+.btn:hover{transform:translateY(-2px);box-shadow:0 12px 30px rgba(246,201,76,.18)}
+.secondary{color:#f6c94c}
+.hero-logo{display:flex;justify-content:center}
+.hero-logo img{width:min(470px,85vw);filter:drop-shadow(0 0 40px rgba(246,201,76,.15))}
+section{padding:90px 22px}
+.container{max-width:1180px;margin:auto}
+.section-title{text-align:center;margin-bottom:45px}
+.section-title h2{font-size:40px}
+.section-title p{color:#999;margin-top:8px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.card{background:linear-gradient(145deg,#151515,#0c0c0c);border:1px solid #252525;border-radius:18px;padding:28px;transition:.25s}
+.card:hover{transform:translateY(-6px);border-color:rgba(246,201,76,.45)}
+.icon{font-size:30px;margin-bottom:12px}
+.card h3{font-size:21px;margin-bottom:8px}
+.card p{color:#aaa;font-size:14px}
+.price-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.price{position:relative}
+.price.popular{border-color:#f6c94c;box-shadow:0 0 35px rgba(246,201,76,.08)}
+.tag{position:absolute;right:18px;top:18px;background:#f6c94c;color:#111;padding:5px 9px;border-radius:20px;font-size:11px;font-weight:800}
+.amount{font-size:40px;font-weight:900;color:#f6c94c;margin:15px 0}
+.price ul{list-style:none;color:#bbb;margin:20px 0}
+.price li{margin:10px 0}
+.price li:before{content:"✓";color:#f6c94c;margin-right:9px}
+.cta{background:linear-gradient(135deg,#171717,#0b0b0b);border-top:1px solid #252525;border-bottom:1px solid #252525;text-align:center}
+.cta h2{font-size:42px}
+.cta p{color:#aaa;margin:12px auto 25px;max-width:650px}
+.contact-box{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.contact-card{padding:28px;border:1px solid #262626;border-radius:18px;background:#101010}
+.contact-card h3{margin-bottom:8px}
+.contact-card p{color:#aaa}
+footer{padding:30px 22px;text-align:center;color:#777;border-top:1px solid #1d1d1d;font-size:13px}
+@media(max-width:850px){
+nav{display:none}.hero-inner{grid-template-columns:1fr;text-align:center}.hero p{margin-left:auto;margin-right:auto}.buttons{justify-content:center}
+.cards,.price-grid,.contact-box{grid-template-columns:1fr}.hero-logo{order:-1}.hero-logo img{width:300px}section{padding:70px 18px}
+}
+</style>
+</head>
+<body>
+<header>
+<div class="nav">
+<a class="brand" href="#"><img src="logo.png" alt="WebCraft Studio logo"><span>WebCraft</span> Studio</a>
+<nav><a href="#home">Home</a><a href="#services">Services</a><a href="#pricing">Pricing</a><a href="#contact">Contact</a></nav>
+</div>
+</header>
+
+<main>
+<section class="hero" id="home">
+<div class="hero-inner">
+<div>
+<div class="badge">Premium Website Studio</div>
+<h1>Beautiful websites.<br><span>Built to sell.</span></h1>
+<p>Modern, responsive and professional websites for businesses, creators and brands. Choose a ready-made website or request a custom design.</p>
+<div class="buttons"><a class="btn primary" href="#pricing">View Websites</a><a class="btn secondary" href="#contact">Contact Us</a></div>
+</div>
+<div class="hero-logo"><img src="logo.png" alt="WebCraft Studio"></div>
+</div>
+</section>
+
+<section id="services">
+<div class="container">
+<div class="section-title"><h2>Why choose WebCraft?</h2><p>Everything a modern website needs.</p></div>
+<div class="cards">
+<div class="card"><div class="icon">✦</div><h3>Modern Design</h3><p>Clean premium layouts designed to make your brand look professional.</p></div>
+<div class="card"><div class="icon">📱</div><h3>Mobile Friendly</h3><p>Your website looks great on phones, tablets and computers.</p></div>
+<div class="card"><div class="icon">⚡</div><h3>Fast & Secure</h3><p>Lightweight pages with a smooth browsing experience.</p></div>
+</div>
+</div>
+</section>
+
+<section id="pricing">
+<div class="container">
+<div class="section-title"><h2>Website Packages</h2><p>Simple pricing for ready-to-use websites.</p></div>
+<div class="price-grid">
+<div class="card price"><h3>Starter</h3><div class="amount">₹999</div><ul><li>1-page website</li><li>Mobile responsive</li><li>Contact section</li><li>Basic customization</li></ul><a class="btn primary" href="#contact">Buy Now</a></div>
+<div class="card price popular"><div class="tag">POPULAR</div><h3>Business</h3><div class="amount">₹1,999</div><ul><li>Multi-section website</li><li>Premium design</li><li>Mobile responsive</li><li>Contact/WhatsApp button</li></ul><a class="btn primary" href="#contact">Buy Now</a></div>
+<div class="card price"><h3>Custom</h3><div class="amount">₹2,999+</div><ul><li>Custom layout</li><li>Brand-focused design</li><li>Extra sections</li><li>Personalized changes</li></ul><a class="btn primary" href="#contact">Request</a></div>
+</div>
+</div>
+</section>
+
+<section class="cta">
+<div class="container">
+<h2>Ready to launch your website?</h2>
+<p>Tell us what you need and we’ll help you choose the right website package.</p>
+<a class="btn primary" href="#contact">Get Started</a>
+</div>
+</section>
+
+<section id="contact">
+<div class="container">
+<div class="section-title"><h2>Contact WebCraft Studio</h2><p>Replace the details below with your real contact information.</p></div>
+<div class="contact-box">
+<div class="contact-card"><h3>📲 WhatsApp</h3><p>+91 XXXXX XXXXX</p></div>
+<div class="contact-card"><h3>✉️ Email</h3><p>your-email@example.com</p></div>
+</div>
+</div>
+</section>
+</main>
+
+<footer>© 2026 WebCraft Studio • Beautiful Websites | Built for Your Dreams</footer>
+</body>
+</html>
