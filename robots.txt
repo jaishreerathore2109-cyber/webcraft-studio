@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://jaishreerathore2109-cyber.github.io/webcraft-studio/sitemap.xml
